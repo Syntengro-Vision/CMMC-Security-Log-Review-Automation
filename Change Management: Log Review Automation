@@ -1,4 +1,4 @@
-# Change Management: Audit Accountability Modernization (SOP-873-06)
+# Change Management: Audit Accountability Modernization (v2.0)
 
 ## 1. Objective
 To modernize the Audit and Accountability procedures at Artemis Consulting, moving from manual monthly oversight to an automated, decentralized verification model.
@@ -11,14 +11,9 @@ To modernize the Audit and Accountability procedures at Artemis Consulting, movi
 | **Audit Trail** | Dispersed Excel Files | Centralized SharePoint List |
 | **Fail-Safe** | None (Reliant on Memory) | 7-Day Escalation Logic |
 
-## 3. Technical Implementation
-- **Workflow:** Power Automate Recurrence Engine.
-- **Data Hook:** Custom JSON Adaptive Cards mapping to `Compliance Log Review` SharePoint schema.
-- **Escalation:** Conditional branching to notify Lead Systems Administrator of verification timeouts.
+## 3. Human-in-the-Loop Verification
+To maintain high-fidelity auditing, the automation does not replace the technical review. Technicians follow the "Technical Verification Protocol" (manual log analysis) before utilizing the Teams Adaptive Card for digital sign-off.
 
 ## 4. Compliance Mapping (CMMC 2.0 / NIST 800-171)
-- **AC.L2-3.1.12 (Control Monitoring):** Decentralized verification ensures "eyes-on" logs by delegated technicians.
-- **AU.L2-3.3.1 (Audit Logging):** Centralized SharePoint repository provides a non-repudiable system of record for auditors.
-
-## 5. Summary of Changes
-Revision v2.0 (Feb 3, 2026) codified the use of automation as the primary method for audit review. Manual procedures (M365 Audit Search/PreVeil Data Export) remain in the SOP as the "standardized steps" technicians must follow before submitting their digital verification.
+- **AC.L2-3.1.12 (Control Monitoring):** Decentralized verification ensures "eyes-on" logs.
+- **AU.L2-3.3.1 (Audit Logging):** Centralized SharePoint repository provides a non-repudiable system of record.
