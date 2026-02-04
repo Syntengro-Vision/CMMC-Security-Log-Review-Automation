@@ -1,18 +1,24 @@
-# Change Management: Log Review Automation (v2.0)
+# Change Management: Audit Accountability Modernization (SOP-873-06)
 
-## 1. Problem Statement
-The legacy SOP-873-06 (v1.0) relied on manual monthly reviews of disparate logs (M365, PreVeil, Sentinel). This manual process was prone to "compliance drift," lacked a real-time audit trail, and provided no escalation path for missed reviews.
+## 1. Objective
+To modernize the Audit and Accountability procedures at Artemis Consulting, moving from manual monthly oversight to an automated, decentralized verification model.
 
-## 2. Solution: Automated Verification Engine
-I engineered a Power Automate solution to modernize Artemis Consulting's audit accountability.
-- **Trigger:** Bi-weekly recurrence to increase audit frequency by 100%.
-- **Interface:** Interactive Microsoft Teams Adaptive Cards for decentralized technician verification.
-- **Persistence:** Direct integration with SharePoint Online for automated record keeping.
+## 2. Process Transformation
+| Feature | Legacy Process (v1.0) | Automated Process (v2.0) |
+| :--- | :--- | :--- |
+| **Frequency** | Monthly (Last Friday) | At least Bi-Weekly |
+| **Evidence Collection** | Manual CSV Exports | Automated Teams Adaptive Cards |
+| **Audit Trail** | Dispersed Excel Files | Centralized SharePoint List |
+| **Fail-Safe** | None (Reliant on Memory) | 7-Day Escalation Logic |
 
-## 3. Compliance Impact (CMMC AC.L2-3.1.12)
-- **Non-Repudiation:** Automated capture of technician identity and timestamps.
-- **Governance:** Implemented a 7-day timeout escalation to ensure 100% audit coverage.
-- **Review:** Centralized a 'Biweekly Meeting View' for senior admin sign-off.
+## 3. Technical Implementation
+- **Workflow:** Power Automate Recurrence Engine.
+- **Data Hook:** Custom JSON Adaptive Cards mapping to `Compliance Log Review` SharePoint schema.
+- **Escalation:** Conditional branching to notify Lead Systems Administrator of verification timeouts.
 
-## 4. Implementation Details
-The SOP was updated on Feb 3, 2026, to reflect the decommission of manual monthly exports in favor of this automated lifecycle.
+## 4. Compliance Mapping (CMMC 2.0 / NIST 800-171)
+- **AC.L2-3.1.12 (Control Monitoring):** Decentralized verification ensures "eyes-on" logs by delegated technicians.
+- **AU.L2-3.3.1 (Audit Logging):** Centralized SharePoint repository provides a non-repudiable system of record for auditors.
+
+## 5. Summary of Changes
+Revision v2.0 (Feb 3, 2026) codified the use of automation as the primary method for audit review. Manual procedures (M365 Audit Search/PreVeil Data Export) remain in the SOP as the "standardized steps" technicians must follow before submitting their digital verification.
