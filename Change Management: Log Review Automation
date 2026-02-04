@@ -1,0 +1,18 @@
+# Change Management: Log Review Automation (v2.0)
+
+## 1. Problem Statement
+The legacy SOP-873-06 (v1.0) relied on manual monthly reviews of disparate logs (M365, PreVeil, Sentinel). This manual process was prone to "compliance drift," lacked a real-time audit trail, and provided no escalation path for missed reviews.
+
+## 2. Solution: Automated Verification Engine
+I engineered a Power Automate solution to modernize Artemis Consulting's audit accountability.
+- **Trigger:** Bi-weekly recurrence to increase audit frequency by 100%.
+- **Interface:** Interactive Microsoft Teams Adaptive Cards for decentralized technician verification.
+- **Persistence:** Direct integration with SharePoint Online for automated record keeping.
+
+## 3. Compliance Impact (CMMC AC.L2-3.1.12)
+- **Non-Repudiation:** Automated capture of technician identity and timestamps.
+- **Governance:** Implemented a 7-day timeout escalation to ensure 100% audit coverage.
+- **Review:** Centralized a 'Biweekly Meeting View' for senior admin sign-off.
+
+## 4. Implementation Details
+The SOP was updated on Feb 3, 2026, to reflect the decommission of manual monthly exports in favor of this automated lifecycle.
